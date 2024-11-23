@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tellraw Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tellraw Generator</h1>
+    </header>
+    <main>
+        <form id="tellraw-form">
+            <label for="text">Text:</label>
+            <input type="text" id="text" name="text" placeholder="Dein Text hier">
+            
+            <label for="color">Farbe:</label>
+            <select id="color" name="color">
+                <option value="white">Weiß</option>
+                <option value="red">Rot</option>
+                <option value="green">Grün</option>
+                <option value="blue">Blau</option>
+                <option value="yellow">Gelb</option>
+                <option value="aqua">Aqua</option>
+                <option value="dark_red">Dunkelrot</option>
+            </select>
+            
+            <label for="bold">Fett:</label>
+            <input type="checkbox" id="bold" name="bold">
+
+            <button type="button" id="generate">Generieren</button>
+        </form>
+        <section id="output">
+            <h2>Tellraw-Befehl</h2>
+            <textarea id="command" readonly></textarea>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
